@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5%;
+  font-family: "Poppins";
+  font-weight: 400;
+  background-color: #13171c;
+}
+.menu-hamburguesa {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  gap: 5px;
+}
+.menu-hamburguesa__barritas {
+  height: 5px;
+  width: 30px;
+  background-color: #eeeeee;
+}
+
+.logo {
+  width: 55px;
+}
+.menu-desktop {
+  display: none;
+}
+
+@media (min-width: 580px) {
+  .menu-hamburguesa {
+    display: none;
+  }
+  .menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .menu-desktop__opciones {
+    text-decoration: none;
+    color: #eeeeee;
+  }
+} ;

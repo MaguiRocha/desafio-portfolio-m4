@@ -1,0 +1,19 @@
+.bienvenida__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #00adb5;
+  gap: 50px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.bienvenida__titulo::first-line {
+  color: #ffffff;
+}
+
+.bienvenida__img {
+}
