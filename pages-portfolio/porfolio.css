@@ -5,6 +5,11 @@
 body {
   margin: 0px;
 }
+.contenedor-general {
+}
 
-.bienvenida {
+.contenedor-general__linea-divisoria {
+  background-color: #c23dd4;
+  width: 100%;
+  height: 1px;
 }

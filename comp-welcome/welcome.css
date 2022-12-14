@@ -1,14 +1,37 @@
 .bienvenida__container {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
   align-items: center;
-  color: #00adb5;
-  gap: 50px;
+  color: #c23dd4;
+  gap: 30px;
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
+  height: 90vh;
+  background-color: #13171c;
+}
+
+@media (min-width: 680px) {
+  .bienvenida__container {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+    gap: 50px;
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 300px) {
+  .bienvenida__container {
+    font-size: 35px;
+  }
+}
+
+.bienvenida__titulo {
+  margin: 0px;
 }
 
 .bienvenida__titulo::first-line {
@@ -16,4 +39,11 @@
 }
 
 .bienvenida__img {
+  height: 200px;
+}
+
+@media (min-width: 710px) {
+  .bienvenida__img {
+    height: 300px;
+  }
 }

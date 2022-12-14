@@ -1,6 +1,6 @@
-function main() {
-  const containerHeaderEl = document.querySelector(".header-section");
-  compHeader(containerHeaderEl);
+function mainContact() {
+  headerComp(document.querySelector(".header-section"));
+  contactComp(document.querySelector(".contacto-section"));
 }
 
-main();
+mainContact();

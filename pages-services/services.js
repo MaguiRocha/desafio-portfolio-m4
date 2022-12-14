@@ -1,6 +1,7 @@
-function main() {
-  const containerHeaderEl = document.querySelector(".header-section");
-  compHeader(containerHeaderEl);
+function mainServices() {
+  const paginaActual = "Servicios";
+  headerComp(document.querySelector(".header-section"));
+  welcomeComp(document.querySelector(".bienvenida-section"), paginaActual);
 }
 
-main();
+mainServices();

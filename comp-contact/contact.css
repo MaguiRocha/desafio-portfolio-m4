@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Poppins";
+  background-color: #13171c;
+  color: #ffffff;
+  height: 100vh;
+}
+
+.formulario__title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+@media (min-width: 680px) {
+  .formulario__title {
+    font-weight: 700;
+    font-size: 50px;
+  }
+}
+
+.formulario__contenedor-interno {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  width: 100%;
+}
+
+@media (min-width: 680px) {
+  .formulario {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: flex-start;
+    padding: 5rem;
+  }
+}
+
+.formulario__contenedor-de-input-nombre-y-mail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.formulario__fieldset,
+.formulario__textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario__textarea-input,
+.formulario__area-input {
+  background-color: rgba(57, 62, 70, 0.5);
+  border-radius: 16px;
+  border: none;
+  color: #ffffff;
+  padding: 10px 5px;
+  text-indent: 10px;
+  font-size: 18px;
+}
+
+.formulario__area-input {
+  height: 60px;
+}
+
+.formulario__cont-button {
+}
+
+.formulario__button {
+  background-color: #c23dd4;
+  width: 100%;
+  height: 55px;
+  border-radius: 24px;
+  font-family: "Poppins";
+  font-size: 1rem;
+}

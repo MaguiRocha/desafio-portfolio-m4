@@ -1,4 +1,4 @@
-function compHeader(el) {
+function headerComp(el) {
   const headerCompEl = document.createElement("div");
 
   headerCompEl.innerHTML = `
