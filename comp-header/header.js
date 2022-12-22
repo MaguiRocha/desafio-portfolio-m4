@@ -17,7 +17,7 @@ function headerComp(el) {
 
   headerCompEl.innerHTML = `
   <header class="header">
-  <a href="/index.html" rel="noopener noreferrer"><img src="/images/logo-magui.png" alt="Logo de Magui"
+  <a href="./index.html" rel="noopener noreferrer"><img src="./images/logo-magui.png" alt="Logo de Magui"
   class="logo"></a>
   <div class="menu-hamburguesa">
   <div class="menu-hamburguesa__barritas"></div>
@@ -29,16 +29,16 @@ function headerComp(el) {
   <button class="menu-oculto__boton-cerrar">  +  </button>
   </div>
   <div class="menu-oculto__contenedor-de-opciones">
-  <a href="/pages-portfolio/portfolio.html" class="menu-oculto__opciones">Portfolio</a>
-  <a href="/pages-services/services.html" class="menu-oculto__opciones">Servicios</a>
-  <a href="/pages-contact/contact.html" class="menu-oculto__opciones">Contacto</a>
-  <a href="/index.html" class="menu-oculto__opciones">Home</a>
+  <a href="./portfolio.html" class="menu-oculto__opciones">Portfolio</a>
+  <a href="./services.html" class="menu-oculto__opciones">Servicios</a>
+  <a href="./contact.html" class="menu-oculto__opciones">Contacto</a>
+  <a href="./index.html" class="menu-oculto__opciones">Home</a>
   </div>
   </div>
   <div class="menu-desktop">
-  <a href="/pages-portfolio/portfolio.html" class="menu-desktop__opciones">PORTFOLIO</a>
-  <a href="/pages-services/services.html" class="menu-desktop__opciones">SERVICIOS</a>
-  <a href="/pages-contact/contact.html" class="menu-desktop__opciones">CONTACTO</a>
+  <a href="./portfolio.html" class="menu-desktop__opciones">PORTFOLIO</a>
+  <a href="./services.html" class="menu-desktop__opciones">SERVICIOS</a>
+  <a href="./contact.html" class="menu-desktop__opciones">CONTACTO</a>
   </div>
   </header>`;
 
