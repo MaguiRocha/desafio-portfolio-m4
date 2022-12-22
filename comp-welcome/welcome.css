@@ -1,21 +1,22 @@
 .bienvenida__container {
-  padding: 1rem;
+  padding: 5rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
   color: #c23dd4;
-  gap: 30px;
   font-family: "Poppins";
+  gap: 50px;
   font-weight: 700;
   font-size: 40px;
-  height: 90vh;
+  height: 100%;
   background-color: #13171c;
 }
 
 @media (min-width: 680px) {
   .bienvenida__container {
+    padding: 10rem 7rem;
     flex-direction: row;
     justify-content: space-around;
     text-align: start;

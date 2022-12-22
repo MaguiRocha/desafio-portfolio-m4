@@ -7,11 +7,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem;
   font-family: "Poppins";
   background-color: #13171c;
   color: #ffffff;
-  height: 100vh;
+  height: 100%;
 }
 
 .formulario__title {
@@ -82,4 +82,5 @@
   border-radius: 24px;
   font-family: "Poppins";
   font-size: 1rem;
+  border: none;
 }

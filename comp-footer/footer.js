@@ -28,9 +28,9 @@ function footerComp(el) {
           </div>
         </div>
         <div class="footer__container-social-icons">
-          <a href="https://www.linkedin.com/in/magali-rocha/"><img src="/images/linkedin.png" alt="Linkedin icon"
+          <a target="_blank" rel="noonpener noreferrer" href="https://www.linkedin.com/in/magali-rocha/"><img src="/images/linkedin.png" alt="Linkedin icon"
               class="footer__social-icon"></a>
-          <a href="https://github.com/MaguiRocha/"><img src="/images/github.png" alt="Github icon"
+          <a target="_blank" rel="noonpener noreferrer" href="https://github.com/MaguiRocha/"><img src="/images/github.png" alt="Github icon"
               class="footer__social-icon"></a>
           <a href=""><img src="/images/twitter.png" alt="Twitter icon" class="footer__social-icon"></a>
         </div>

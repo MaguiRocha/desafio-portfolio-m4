@@ -7,10 +7,16 @@ body {
 }
 
 .contenedor-general {
+  font-family: "Poppins";
+  background-color: #13171c;
 }
 
 .contenedor-general__linea-divisoria {
   background-color: #c23dd4;
   width: 100%;
   height: 1px;
+}
+
+.mis-servicios {
+  background-image: url("/images/doodle\ items.png");
 }

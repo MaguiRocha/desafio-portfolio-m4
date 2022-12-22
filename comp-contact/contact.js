@@ -1,3 +1,39 @@
+async function sendForm() {
+  const formEl = document.querySelector(".formulario__contenedor-interno");
+
+  formEl.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const nombreForm = formEl.querySelector(
+      "div.formulario__fieldset input[id='name']"
+    ).value;
+    const mailForm = document.querySelector(
+      "div.formulario__fieldset input[id='email']"
+    ).value;
+    const messageForm = document.querySelector(
+      "div.formulario__textarea textarea[id='messege']"
+    ).value;
+
+    const objData = {
+      to: "magalirocha2104@gmail.com",
+      message: `Nombre: ${nombreForm}, Email: ${mailForm}, Mensaje: ${messageForm}`,
+    };
+
+    console.log("holiss");
+    console.log(objData);
+    console.log(JSON.stringify(objData));
+
+    const url = "https://apx-api.vercel.app/api/utils/dwf";
+
+    await fetch(url, {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(objData),
+    });
+    formEl.reset();
+  });
+}
+
 function contactComp(el) {
   const compFormEl = document.createElement("div");
 
@@ -18,8 +54,8 @@ function contactComp(el) {
             </div>
           </div>
         <div class="formulario__textarea">
-          <label id="messege" for="messege">MENSAJE</label>
-          <textarea class="formulario__textarea-input" id="messege" cols="30" rows="10"></textarea>
+        <label id="messege"  for="messege">MENSAJE</label>
+        <textarea class="formulario__textarea-input" id="messege" cols="30" rows="10"></textarea>
         </div>
         <div class="formulario__cont-button">
           <button class="formulario__button">Enviar</button>
@@ -28,12 +64,6 @@ function contactComp(el) {
       </div>
   `;
 
-  const formEl = compFormEl.querySelector(".formulario__contenedor-interno");
-
-  formEl.addEventListener("submit", function (e) {
-    e.preventDefault();
-    console.log("Todo esta saliendo bien");
-  });
-
   el.appendChild(compFormEl);
+  sendForm();
 }
